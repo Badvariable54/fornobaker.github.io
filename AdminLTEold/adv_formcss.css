@@ -1,0 +1,67 @@
+.inputclass input{
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+.area textarea{
+	height: 80px;
+	width: 10px 0;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.inputclass input,
+.area textarea{
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #999;
+}
+.area textarea{
+	margin-bottom: 10px;
+}
+.inputclass label{
+	position: absolute;
+	top: 10px;
+	left: 8px;
+	color: #999;
+	transition: .5s;
+	pointer-events: none;
+	font-size: 20px;
+	font-style: normal;
+}
+.area label{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #999;
+	transition: .5s;
+	pointer-events: none;
+	font-size: 20px;
+	font-style: normal;
+}
+
+.inputclass input:focus ~ label,
+.inputclass input:valid ~ label{
+	top: -12px;
+	left: 8px;
+	color: #f7497d;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+}
+.area textarea:focus ~ label,
+.area textarea:valid ~ label{
+	top: -10px;
+	left: 12px;
+	color: #f7497d;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+}
+.inputclass input:focus,
+.area textarea:focus,
+.inputclass input:valid,
+.area textarea:valid{
+	border-bottom: 2px solid #f7497d;
+}
